@@ -1,6 +1,5 @@
 class ChangePostStatusDataTypeToPosts < ActiveRecord::Migration
   def change
-    add_column :posts, :published_status, :string
-
+change_column :posts, :post_status, :string
   end
 end
